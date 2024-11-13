@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.sidebar {
+    background-color: #9b745adf;
+    color: #ffffff;
+    width: 30%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.padding-img {
+    padding-bottom: 50px;
+}
+
+.profile-pic img {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    background-color: rgba(141, 111, 29, 0.197);
+    box-shadow: -1px 2px 14px 5px rgba(0,0,0,0.22);
+-webkit-box-shadow: -1px 2px 14px 5px rgba(0,0,0,0.22);
+-moz-box-shadow: -1px 2px 14px 5px rgba(0,0,0,0.22);
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sidebar h1 span {
+    color: #d1bc95;
+}
+
+.menu-bar {
+    padding: 15px;
+}
+
+.a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.description {
+    font-size: 17px;
+    line-height: 3.5;
+}
+
+.description:hover {
+    transform: scale(1.2);
+    color: #d1bc95;
+    transition: all 0.3s;
+}
+
+.main-content {
+    background-image: url(gelombang-putih.jpg);
+    background-size: cover;
+    width: 100%;
+    padding: 50px;
+    font-size: 2vw;
+}
+
+.main-content h1 span {
+    color: #90671b;
+}
+
+.ul {
+    margin: 50px;
+    list-style: circle;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+li span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #90671b;
+}
+
+.icon-contact {
+    text-decoration: none;
+    color: black;
+    padding: 50px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}

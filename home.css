@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(pexels-joyston-judah-331625-933054.jpg);
+    background-size: cover;
+}
+
+.ul-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(125, 125, 125);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 10vh;
+}
+
+.li-navbar {
+    list-style: none;
+    padding: 40px;
+    color: #ffff;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+
+.li-navbar:hover {
+    transform: scale(1.4);
+    transition: 0.3s all;
+    color: rgba(255, 202, 141, 0.473);
+}
+
+.a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.profile-pic img {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgba(141, 111, 29, 0.197);
+    box-shadow: -1px 2px 14px 5px rgba(0,0,0,0.22);
+-webkit-box-shadow: -1px 2px 14px 5px rgba(0,0,0,0.22);
+-moz-box-shadow: -1px 2px 14px 5px rgba(0,0,0,0.22);
+}  
+
+.container-footer {
+    background-color: rgb(125, 125, 125);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.bootstrap-icon {
+    text-decoration: none;
+    color: black;
+    margin: 50px;
+}
+
+.bootstrap-icon:hover {
+    transform: scale(1.4);
+    transition: 0.3s all;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .ul-navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(125, 125, 125, 0.184);
+        border-radius: 20px;
+        height: 100%;
+    }
+
+    .ul-navbar li {
+        margin: 10px;
+        text-align: center;
+    }
+
+    #menu-toggle:checked + .menu-icon + .ul-navbar {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(125, 125, 125);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        height: 10vh;
+    }
+}
